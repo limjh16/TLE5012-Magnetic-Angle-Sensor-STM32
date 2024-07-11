@@ -18,7 +18,7 @@
  */
 
 #ifndef TLE5012_FRAMEWORK
-#define TLE5012_FRAMEWORK    TLE5012_FRMWK_ARDUINO
+#define TLE5012_FRAMEWORK    TLE5012_FRMWK_STM32
 #endif
 
 #include "tle5012-conf-dfl.hpp"
