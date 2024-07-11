@@ -523,6 +523,7 @@ errorTypes Tle5012b::getAngleSpeed(double &finalAngleSpeed, int16_t &rawSpeed, u
 	//checks the value of fir_MD according to which the value in the calculation of the speed will be determined
 	//according to if prediction is enabled then, the formula for speed changes
 	finalAngleSpeed = calculateAngleSpeed(angleRange, rawSpeed, firMDVal, intMode2Prediction);
+	_command[0] = 0; // Have to access _command variable, else somehow when the function exits the pointer will change
 	return (status);
 }
 
